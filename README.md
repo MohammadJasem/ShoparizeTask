@@ -6,7 +6,7 @@ To run the project you have to use apache server
 
 You can enter the project using this url "http://localhost/ShoparizeTask/api/"
 
-To use sum api in the right way you have to use this url "http://localhost/ShoparizeTask/api/sum"
+To use sum API in the right way you have to use this url "http://localhost/ShoparizeTask/api/sum"
 
 It must be post request. Body parameters must be the following
 
@@ -22,6 +22,22 @@ It must be post request. Body parameters must be the following
 
 All parameters are required
 
-The api is online. You can check it here: https://scandiweb-tests.000webhostapp.com/ShoparizeTask/api
+The API is online. You can check it here: https://scandiweb-tests.000webhostapp.com/ShoparizeTask/api
+
+Request class contain just one function to get parameters array if the request method is post or get
+
+MainController contain sum function
+
+api/index file contains the available APIs and run them and return 404 if API is not exist
+
+api class contains 3 functions
+
+1. post function: it's for API's post requests and run the right function in the right controller
+
+2. get function: it's for API's get requests and run the right function in the right controller
+
+3. notFound_404 function: return 404 response
+
+APIRespose class contains functions for response sending request
 
 Thanks
