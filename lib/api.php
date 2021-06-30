@@ -2,7 +2,7 @@
 
 namespace app\lib;
 
-use app\lib\APIResponse;
+use app\lib\apiResponse;
 
 class api
 {
@@ -59,7 +59,7 @@ class api
 	{
 		if(!self::$routeFound){
             $response = new APIResponse();
-			$response->sendResponse(500, false, "Endpoint is not found");
+			$response->sendResponse(404, false, "Endpoint is not found");
         }
 	}
 }
